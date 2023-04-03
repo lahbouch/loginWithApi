@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Application"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:hint="Username"/>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/getBtn"
+            android:layout_width="match_parent"
+            android:text="login with GET"
+            android:layout_height="wrap_content"
+            android:onClick="getCall"
+            />
+
+
+        <Button
+            android:id="@+id/postBtn"
+            android:layout_width="match_parent"
+            android:text="login with POST"
+            android:layout_height="wrap_content"
+            android:onClick="postCall"
+           />
+
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/methodChoosenStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dd"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/resultStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dd"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/roleStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dd"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

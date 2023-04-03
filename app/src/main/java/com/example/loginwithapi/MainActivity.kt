@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
     fun postCall(view: View) {
         Log.e("TAG", "getCall: " )
-        methodChoosenStatus.text = "GET Method"
+        methodChoosenStatus.text = "POST Method"
         methodChoosenStatus.visibility = View.VISIBLE
         pb.visibility = View.VISIBLE
         val username = username.text.toString()

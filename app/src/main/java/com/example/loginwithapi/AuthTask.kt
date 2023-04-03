@@ -92,7 +92,6 @@ class AuthTask(
                     sb.append(line)
                     break
                 }
-
                 return sb.toString()
             }
 
@@ -114,7 +113,7 @@ class AuthTask(
         super.onPostExecute(result)
         Log.e("TAG", "onPostExecute: " )
         progressBar.visibility = View.GONE
-        loginStatus.text = "login successfully"
+        loginStatus.text = if (result == "data authorized") "Login Successfully" else "Error de login"
         roleStatus.text = result.toString()
         loginStatus.visibility = View.VISIBLE
         roleStatus.visibility = View.VISIBLE

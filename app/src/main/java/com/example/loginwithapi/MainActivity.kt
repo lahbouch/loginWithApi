@@ -6,7 +6,7 @@ import android.util.Log
 import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
-import org.w3c.dom.Text
+
 
 class MainActivity : AppCompatActivity() {
 
